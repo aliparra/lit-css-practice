@@ -11,19 +11,29 @@ export class Header extends LitElement {
         display: block;
       }
 
-      header {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 25px;
-        background-color: var(--black-bg-color);
+      #header-wrapper {
+        padding: 20px;
+        background-color: #2b2727a6;
+      }
+
+      .links-sec__link--bold-purple {
+        color: #53056b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .links-sec__link--size24 {
+        font-size: 24px;
       }
     `;
   }
 
   render() {
     return html`
-      <header>
-        <a href="/">Go home</a>
+      <header id="header-wrapper">
+        <a class="links-sec__link--bold-purple links-sec__link--size24" href="/"
+          >Go home</a
+        >
       </header>
     `;
   }

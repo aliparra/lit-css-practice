@@ -12,6 +12,7 @@ export class MyApp extends LitElement {
     return css`
       :host {
         display: block;
+        
       }
     `;
   }
