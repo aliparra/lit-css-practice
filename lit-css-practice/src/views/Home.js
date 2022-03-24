@@ -25,7 +25,7 @@ export class Home extends LitElement {
     return html`
       <div class="text-block">
         <h3>Welcome to ${this.name}'s css and lit lab</h3>
-        <p>I want to refresh all I learned some time ago and leran more things</p>
+        <p>I want to refresh concepts and learn new ones :D </p>
         <div>
             <ul>
                 <li><a href='/box-models'>Box models</a></li>

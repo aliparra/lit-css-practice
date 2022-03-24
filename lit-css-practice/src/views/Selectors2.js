@@ -13,8 +13,8 @@ export class Selectors2 extends LitElement {
   render() {
     return html`
       <div class="text-block">
-        <h3>Capítulo 2. Selectores</h3>
-        <p>Contenido css aquí</p>
+        <h3>Chapter 2. Selectors</h3>
+        <p>Content here</p>
       </div>
     `;
   }

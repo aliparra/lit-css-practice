@@ -13,7 +13,7 @@ export class BoxModels1 extends LitElement {
   render() {
     return html`
       <div class="text-block">
-        <h3>Capítulo 1. Box models</h3>
+        <h3>Chapter 1. Box models</h3>
       </div>
     `;
   }
