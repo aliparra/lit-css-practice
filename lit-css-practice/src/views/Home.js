@@ -3,11 +3,9 @@ import { LitElement, html, css } from "lit-element";
 export class Home extends LitElement {
   static get styles() {
     return css`
-
-    
       .home-main-content {
         padding: 5px 20px;
-        background-color: #adaacf
+        background-color: #adaacf;
       }
       .links-sec__list {
         list-style: none;
@@ -33,12 +31,14 @@ export class Home extends LitElement {
   static get properties() {
     return {
       name: { type: String },
+      routes: { type: Array },
     };
   }
 
   constructor() {
     super();
     this.name = "Alice";
+    this.routes = ["box-models", "selectors", "inheritance", "color"];
   }
 
   render() {
@@ -51,18 +51,21 @@ export class Home extends LitElement {
         <section class="links-sec">
           <h3>Avaiable Chapters:</h3>
           <ul class="links-sec__list">
-            <li class="links-sec__list-item">
-              <a class="links-sec__link--bold-blue" href="/box-models"
-                >Box models</a
-              >
-            </li>
-            <li class="links-sec__list-item">
-              <a class="links-sec__link--bold-blue" href="/selectors">Selectors</a>
-            </li>
+            ${this.getLinks}
           </ul>
         </section>
       </div>
     `;
+  }
+
+  get getLinks() {
+    return html`${this.routes.map(
+      (element) => html`
+        <li class="links-sec__list-item">
+          <a class="links-sec__link--bold-blue" href=${element}>${element}</a>
+        </li>
+      `
+    )}`;
   }
 }
 customElements.define("my-home", Home);

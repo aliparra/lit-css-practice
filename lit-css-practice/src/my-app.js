@@ -3,6 +3,8 @@ import { Router } from "@vaadin/router";
 
 import "./views/BoxModels1";
 import "./views/Selectors2";
+import "./views/Inheritance";
+import "./views/Color";
 import "./views/Home";
 
 import "./Components/Header";
@@ -12,12 +14,9 @@ export class MyApp extends LitElement {
     return css`
       :host {
         display: block;
-        
       }
     `;
   }
-
- 
 
   constructor() {
     super();
@@ -31,6 +30,8 @@ export class MyApp extends LitElement {
       { path: "/", component: "my-home" },
       { path: "/box-models", component: "box-models-1" },
       { path: "/selectors", component: "view-selectors-2" },
+      { path: "/inheritance", component: "view-inheritance" },
+      { path: "/color", component: "view-color" },
     ]);
   }
 

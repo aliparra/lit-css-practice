@@ -101,6 +101,14 @@ export class Selectors2 extends LitElement {
             <p class="pseudo-element">Bonjour</p>
           </div>
         </section>
+        <section class="basic-section">
+          <h2>Combiners</h2>
+          <div id="sub-section-2">
+            <p class="pseudo-element">Hola <b> como estás</b> amigo</p>
+            <p class="pseudo-element">Hello</p>
+            <p class="pseudo-element">Bonjour</p>
+          </div>
+        </section>
       </div>
     `;
   }
